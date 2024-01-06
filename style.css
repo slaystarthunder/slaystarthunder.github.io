@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    margin-top: 60px;
+    display: block;
+}
+
+.header_text {
+    text-align: center;
+    color: white;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: rgb(255, 215, 0);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    font-family: 'Lemon', serif;
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+}
+
+#noButton {
+    position: absolute;
+    margin-left: 70px;
+    transition: all 0.5s ease;
+}
+
+.yes_container {
+    margin-top: 60px;
+    display: none;
+}
+
+@keyframes pulseAnimation {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    25% {
+        transform: scale(1.5); /* Slightly larger */
+    }
+    
+}
+
+.text_animation {
+    
+    animation: pulseAnimation 2s infinite; /* Adjust time as needed */
+    /* Optional: Add more styling to your text here */
+}
+

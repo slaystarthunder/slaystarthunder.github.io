@@ -1,0 +1,16 @@
+container 
+    div with h1
+    div gif container
+    div buttons
+
+Script on same page
+
+Script is two variables, X and Y,
+that offsets the image by an amount.
+
+
+1. Create HTML outline
+2. Find beer image
+3. Do some styling
+4. Write script
+    
