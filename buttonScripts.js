@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     let noButton = document.getElementById('noButton');
-    noButton.addEventListener('mouseover', jumpButton);  // For desktop
-    noButton.addEventListener('touchstart', jumpButton); // For mobile
+    noButton.addEventListener('mouseover', jumpButton);  // for desktop
+    noButton.addEventListener('touchstart', jumpButton); // for mobile
 });
 
 function yesButton() {
@@ -15,13 +15,13 @@ function jumpButton() {
     let noButtonWidth = noButton.offsetWidth;
     let noButtonHeight = noButton.offsetHeight;
 
-    // Ensuring the button stays within the horizontal bounds of the window
+    // ensuring the button stays within the horizontal bounds of the window
     let x = Math.random() * (window.innerWidth - noButtonWidth);
     if (x < 0) x = 0; // Prevents negative values
 
-    // Ensuring the button stays within the vertical bounds of the window
+    // ensuring the button stays within the vertical bounds of the window
     let y = Math.random() * (window.innerHeight - noButtonHeight);
-    if (y < 0) y = 0; // Prevents negative values
+    if (y < 0) y = 0; // prevents negative values
 
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
